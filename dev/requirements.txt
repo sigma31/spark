@@ -2,7 +2,7 @@
 py4j>=0.10.9.7
 
 # PySpark dependencies (optional)
-numpy>=1.21
+numpy>=1.22.2
 pyarrow>=4.0.0
 six==1.16.0
 pandas>=1.4.4
@@ -69,3 +69,5 @@ torcheval
 # DeepspeedTorchDistributor dependencies
 deepspeed; sys_platform != 'darwin'
 
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
